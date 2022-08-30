@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    --shadow: 0 2px 4px rgba(0,0,0,.4);
+    height: 100vh;
+    color: white;
+    padding-top: 30vh;
+    padding-left: 15vw;
+    position: relative;
+}
+
+.bg {
+    background: #444 url('https://vsegda-pomnim.com/uploads/posts/2022-04/1650941370_57-vsegda-pomnim-com-p-krasivie-gori-foto-69.jpg') no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: saturate(80%) brightness(70%);
+}
+
+.title {
+    display: inline-block;
+    font-size: 4vw;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    text-shadow: var(--shadow);
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: -4vw;
+    bottom: -1.5vw;
+    height: .4vw;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+
